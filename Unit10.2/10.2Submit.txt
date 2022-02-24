@@ -1,0 +1,9 @@
+ES2015 Global Constants
+
+const globalConst = 34
+globalConst = 20 //Throws Error
+
+1. var has function scope while let has block scope, var can be redeclared but let cannot
+2. var has function scope while const has bloack scope, var can be reassigned and redeclared while const cannot
+3. let can be reassigned but const cannot
+4. hoisting is where variables are used before being declared, var does this naturally

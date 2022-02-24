@@ -1,0 +1,25 @@
+1. {1,2,3,4}
+2. ref
+3.{[1,2,3] => true, [1,2,3] => false}
+4.
+function hasDuplicate(obj){
+	let temp = new Set(obj)
+	if(obj.length == temp.size)
+	{return false;}
+	return true;
+}
+5.
+function vowelCount(str){
+	let m = new Map()
+	for(let char of str){
+		if("aeiouAEIOU".includes(char)){
+			if(m.has(char)){
+				m.set(char, m.get(char) + 1)
+			}else{
+				m.set(char,1)
+			}
+
+		}
+	}
+	return m
+}
